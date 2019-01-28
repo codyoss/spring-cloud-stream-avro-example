@@ -1,0 +1,11 @@
+spring.cloud.stream:
+  bindings:
+    inputChannel:
+      destination: input-topic
+      contentType: application/*+avro
+      group: local-consumer
+    outputChannel:
+      destination: ouput-topic
+      contentType: application/*+avro
+app:
+  schemaRegistryClient: http://localhost:8081

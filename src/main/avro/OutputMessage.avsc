@@ -1,0 +1,18 @@
+{
+  "name": "OutputMessage",
+  "namespace": "com.github.codyoss.springcloudavro.avro",
+  "type": "record",
+  "fields": [
+    {
+      "name": "message",
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "type": {
+        "type": "long",
+        "logicalType": "timestamp-millis"
+      }
+    }
+  ]
+}

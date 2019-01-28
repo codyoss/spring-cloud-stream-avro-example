@@ -1,0 +1,11 @@
+{
+  "name": "InputMessage",
+  "namespace": "com.github.codyoss.springcloudavro.avro",
+  "type": "record",
+  "fields": [
+    {
+      "name": "message",
+      "type": "string"
+    }
+  ]
+}
