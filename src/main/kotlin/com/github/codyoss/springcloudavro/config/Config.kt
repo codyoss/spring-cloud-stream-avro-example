@@ -39,6 +39,9 @@ class Config {
         return serde
     }
 
+
+    // The two below factory methods register the custom message converters with Spring. They will be applied based on
+    // content headers and classes trying to be serialized/deserialized to.
     @Bean
     @StreamMessageConverter
     fun inputMessageConverter(inputMessageSerde: SpecificAvroSerde<InputMessage>, inputTopic: String): InputMessageConverter {
